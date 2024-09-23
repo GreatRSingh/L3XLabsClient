@@ -40,11 +40,4 @@
         android:title="Do an optimized init sync"
         tools:ignore="HardcodedText"
         app:showAsAction="never" />
-
-    <item
-        android:id="@+id/menu_home_filter"
-        android:icon="@drawable/ic_home_search"
-        android:title="@string/home_filter_placeholder_home"
-        app:iconTint="?vctr_content_secondary"
-        app:showAsAction="ifRoom" />
 </menu>
