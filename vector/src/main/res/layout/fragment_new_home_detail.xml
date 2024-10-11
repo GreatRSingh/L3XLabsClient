@@ -71,6 +71,17 @@
                         android:padding="6dp"
                         tools:src="@sample/user_round_avatars" />
 
+                    <ImageView
+                        android:id="@+id/search_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        
+                        android:contentDescription="Search..."
+                        android:padding="12dp"
+                        tools:src="@drawable/ic_search"
+                        android:queryHint="Search..." />
+
                 </com.google.android.material.appbar.MaterialToolbar>
 
                 <ImageView

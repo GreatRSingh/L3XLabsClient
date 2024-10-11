@@ -648,8 +648,12 @@ class HomeActivity :
                 MainActivity.restartApp(this, MainActivityArgs(clearCache = true))
                 true
             }
+            R.id.search_view -> {
+                openfiltering()
+                true
+            }
             R.id.menu_home_filter -> {
-                navigator.openRoomsFiltering(this)
+                openfiltering()
                 true
             }
             R.id.menu_home_setting -> {
@@ -672,6 +676,9 @@ class HomeActivity :
         }
     }
 
+    private fun openfiltering() {
+        navigator.openRoomsFiltering(this)
+    }
     private fun launchQrCode() {
         startActivity(UserCodeActivity.newIntent(this, sharedActionViewModel.session.myUserId))
     }
